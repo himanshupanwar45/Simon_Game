@@ -9,7 +9,6 @@ var started = false;
 
 //functions 
 
-if ($(window).width() <= 768) {
 	$(document).click(function() {
 
         if(!started){
@@ -18,19 +17,9 @@ if ($(window).width() <= 768) {
             started = true;
         }
     });
-}
 
 
-else{
-    $(document).keydown(function() {
 
-        if(!started){
-            // $("#level-title").text("Level " + level);
-            nextSequence();
-            started = true;
-        }
-    });
-}
 
    
 
